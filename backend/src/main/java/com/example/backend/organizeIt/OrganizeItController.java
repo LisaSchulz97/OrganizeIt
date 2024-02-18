@@ -16,10 +16,10 @@ public class OrganizeItController {
     public List<OrganizeIt> getOrganizer() {
         return organizerService.getAllOrganize();
     }
-//
-//    @PostMapping
-//    public OrganizeIt addOrganize(@RequestBody OrganizeIt organizeItToAdd) {
-//        return organizerService.addOrganize(organizeItToAdd);
-//    }
+
+    @PostMapping
+    public OrganizeIt addOrganize(@RequestBody OrganizeIt organizeItToAdd) {
+        return organizerService.addOrganize(organizeItToAdd);
+    }
 
 }

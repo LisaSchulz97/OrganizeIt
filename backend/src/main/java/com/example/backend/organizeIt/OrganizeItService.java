@@ -30,7 +30,7 @@ public class OrganizeItService {
         return organizeItRepoInterface.findAll();
     }
 
-//    public OrganizeIt addOrganize(OrganizeIt organizeItToAdd) {
-//        return organizeItRepoInterface.save(organizeItToAdd);
-//    }
+    public OrganizeIt addOrganize(OrganizeIt organizeItToAdd) {
+        return organizeItRepoInterface.save(organizeItToAdd);
+    }
 }
