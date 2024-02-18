@@ -1,4 +1,4 @@
-package com.example.backend;
+package com.example.backend.organizeIt;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -14,12 +14,12 @@ public class OrganizeItController {
 
     @GetMapping
     public List<OrganizeIt> getOrganizer() {
-        return organizerService.listOrganizations();
+        return organizerService.getAllOrganize();
     }
-
-    @PostMapping
-    public OrganizeIt addOrganize(@RequestBody OrganizeIt organizeItToAdd) {
-        return organizerService.addOrganize(organizeItToAdd);
-    }
+//
+//    @PostMapping
+//    public OrganizeIt addOrganize(@RequestBody OrganizeIt organizeItToAdd) {
+//        return organizerService.addOrganize(organizeItToAdd);
+//    }
 
 }
